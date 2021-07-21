@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+
+
+router.get('/', (req, res) => {
+    const msg = { message: 'test tweets index'};
+    res.json(msg);
+})
+
+module.exports = router;
